@@ -92,6 +92,22 @@ def get_dataiter(batch_size, resize, is_train, num_workers=12, **kwargs):
     return torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=is_train, num_workers=num_workers,
                                        collate_fn=collate_fn, **kwargs)
 
+def image_blk(image_list,Window_size):
+    result_list = []
+    for image in image_list:
+        img = Image.open(image)
+        w,h = img.size
+        num_windows_x = w // Window_size
+        num_windows_y = h // Window_size
+        for y in range(num_windows_y):
+            for x in range(num_windows_x):
+                left = x*Window_size
+                right = left + Window_size
+                upper = y*Window_size
+                lower = upper + Window_size
+                window = img.crop((left,upper,right,lower))
+                result_list.append(window)
+    return result_list
 
 if __name__ != '__main__':
     __all__ = ['get_dataiter', 'images_labels', 'data_folder', 'train_data_folder', 'train_image_folder',
