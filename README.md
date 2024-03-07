@@ -1,5 +1,10 @@
 # icdar2024-hust-2-
 
+
+WE WILL FACE A VERY LARGE PROJECT CONSTRUCTION ALTERNATION!!! THANKYOU FOR YOUR PATIENCE.
+
+
+
 dataProcess.py from dataiter.py has some accessible functions.
 
     get_dataiter(): Return a iteration of datasets. The resize=None problem has fixed.
