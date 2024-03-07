@@ -1,12 +1,14 @@
 # icdar2024-hust-2-
 
-dataiter.py has accessible functions 'get_dataiter', 'images_labels' and 'image_blk'.
+dataProcess.py from dataiter.py has some accessible functions.
 
     get_dataiter(): Return a iteration of datasets. The resize=None problem has fixed.
 
     images_labels(): Return (images, labels) according to train_set or test_set.
 
     image_blk(): Input photo_location/tensor list and a window_size. Output is the croping result.
+
+    label_tokenize(): Input label_list. Output transformed label_list and corresponding vocabulary_diction.
 
 
 
