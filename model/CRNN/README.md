@@ -1,0 +1,1 @@
+CRNN 的pytorch实现，训练自己的数据需要将/data/images里的图片命名为i_label的格式，后运行train.py即可。
