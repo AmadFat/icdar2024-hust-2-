@@ -5,7 +5,7 @@ We will face a very LARGE PROJECT CONSTRUCTION ALTERNATION. Thank you for your p
 
 
 
-dataProcess.py from dataiter.py has some accessible functions.
+dataProcess.py from dataiter.py has some accessible functions. This script has moved to /data.
 
     get_dataiter(): Return a iteration of datasets. The resize=None problem has fixed.
 
@@ -17,10 +17,11 @@ dataProcess.py from dataiter.py has some accessible functions.
 
 
 
-make_smallset.py has 1 accessible function 'make_smallset'
+make_smallset.py has 1 accessible function 'make_smallset'. This script has moved to /utils.
 
     make_smallset(): No input. Automatically extract at most 128 photo-label pairs both from 'train' and 'test' in 'data'. The number 128 can be changed in python file.
+    
 
-gradImprove.py has 'image_gradient_improve' function
+gradImprove.py has 'image_gradient_improve' function. This script has moved to /data.
 
     image_gradient_improve(): Input a tensor. Return the gradient of square.
