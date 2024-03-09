@@ -25,3 +25,9 @@ make_smallset.py has 1 accessible function 'make_smallset'. This script has move
 gradImprove.py has 'image_gradient_improve' function. This script has moved to /data.
 
     image_gradient_improve(): Input a tensor. Return the gradient of square.
+
+
+/parallelTrain is used to help all of us use torchrun or distributed.DistributedDataParallel.
+
+    This folder has 2 example scripts: DDP1.py and DDP2.py.
+    
